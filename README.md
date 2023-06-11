@@ -13,5 +13,3 @@ Test_ProcessMonitor_NoProcessFound: Test the behavior when the process monitor c
 Test_ProcessMonitor_ManualExit: Test the scenario where the user manually exits the process monitor by pressing the 'q' key. Assert that the monitor exits gracefully and stops monitoring.
 
 Test_ProcessMonitor_MultipleProcesses: Test the behavior when multiple processes with the specified name are running simultaneously. Start multiple dummy processes and configure the monitor accordingly. Assert that the monitor correctly handles each process individually and terminates any processes that exceed the maximum lifetime.
-
-Test_ProcessMonitor_LogFileCleanup: Test the cleanup behavior of the process monitor. Start a dummy process and configure the monitor with a short max lifetime and monitoring frequency. After the process is terminated, assert that the log file is created and contains the expected information. Then, wait for a sufficient amount of time for the log file cleanup mechanism to trigger, and assert that the log file no longer exists.
